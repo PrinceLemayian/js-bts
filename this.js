@@ -28,3 +28,5 @@ const thorfinn = {
 };
 
 thorfinn.calcAge = lemayian.calcAge;
+// the this keyword always points to the object calling the method
+thorfinn.calcAge();
