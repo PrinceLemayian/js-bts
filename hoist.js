@@ -1,3 +1,5 @@
+'use strict';
+
 // Hoisting with variables
 
 // console.log(me);
