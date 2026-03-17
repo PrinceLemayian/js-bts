@@ -30,3 +30,20 @@ const thorfinn = {
 thorfinn.calcAge = lemayian.calcAge;
 // the this keyword always points to the object calling the method
 thorfinn.calcAge();
+
+const askeladd = {
+  firstName: 'Artorius',
+  year: 1402,
+  calcAge: function () {
+    console.log(this);
+    console.log(2026 - this.year);
+  },
+  // returns 'Hey undefined' -> arrow functions don't get the this keyword
+  greet: () => console.log(`Hey ${this.firstName}`),
+  // returns 'Hey Artorius'
+  greetAgain: function () {
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+askeladd.greet();
+askeladd.greetAgain();
